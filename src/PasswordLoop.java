@@ -19,7 +19,7 @@ public class PasswordLoop {
         while(!inputPassword.equals(correctPassword));
         System.out.println("Welcome!");
 
-        
+
         scanner.close();
 
     }
