@@ -1,51 +1,30 @@
-import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args){
 
+        Product product1 = new Product("GIANT");
+        Product product2 = new Product("MERIDA", 25000);
+        Product product3 = new Product("TRINX", 6000, 10);
+        Product product = new Product();
+
+        System.out.println(product.name);
+        System.out.println(product.price);
+        System.out.println(product.quantity);
+
+        System.out.println(product1.name);
+        System.out.println(product1.price);
+        System.out.println(product1.quantity);
+
+        System.out.println(product2.name);
+        System.out.println(product2.price);
+        System.out.println(product2.quantity);
+
+        System.out.println(product3.name);
+        System.out.println(product3.price);
+        System.out.println(product3.quantity);
 
 
 
-        String name;
-        int age ;
-        int year;
-        double average;
-        boolean status;
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("What is your name: ");
-        name = scanner.nextLine();
-        System.out.print("age: ");
-        age = scanner.nextInt();
-        System.out.print("year: ");
-        year = scanner.nextInt();
-        System.out.print("average: ");
-        average = scanner.nextDouble();
-        System.out.print("are you enrolled (True/False):  ");
-        status = scanner.nextBoolean();
-
-        System.out.println("your name is " +  name);
-        System.out.println("your age is " + age);
-        System.out.println("you are in " + year + "th year");
-        System.out.println("average is " + average);
-
-
-        if(average > 75){
-            System.out.println("You passed");
-        }else{
-            System.out.println("You failed");
-        }
-
-        if(status){
-            System.out.println("You are enrolled");
-        }else{
-            System.out.println("You are not enrolled");
-        }
-
-
-
-
-        scanner.close();
     }
 }
