@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class Dog extends Animal{
 
-public class Dog {
+    @Override
+    void makeSounds(){
+        System.out.println("Dog sounds like: arf arf arf ");
+    }
 }
